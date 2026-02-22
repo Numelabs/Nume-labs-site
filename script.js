@@ -1,5 +1,5 @@
-// Minimal accordion: one open at a time.
-// Selected Work is open by default (via aria-expanded="true" in HTML).
+// Accordion: multiple sections can be open at once.
+// Selected Work + Contact can both be open by default via aria-expanded="true" in HTML.
 
 (function () {
   const triggers = document.querySelectorAll(".acc__trigger");
@@ -60,12 +60,6 @@
     });
   }
 
-  function closeOthers(current) {
-    triggers.forEach(t => {
-      if (t !== current && t.getAttribute("aria-expanded") === "true") closePanel(t);
-    });
-  }
-
   triggers.forEach(trigger => {
     const panel = document.getElementById(trigger.getAttribute("aria-controls"));
     const expanded = trigger.getAttribute("aria-expanded") === "true";
@@ -75,12 +69,8 @@
 
     trigger.addEventListener("click", () => {
       const isOpen = trigger.getAttribute("aria-expanded") === "true";
-      if (isOpen) {
-        closePanel(trigger);
-      } else {
-        closeOthers(trigger);
-        openPanel(trigger);
-      }
+      if (isOpen) closePanel(trigger);
+      else openPanel(trigger);
     });
   });
 })();

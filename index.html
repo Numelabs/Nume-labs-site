@@ -6,206 +6,275 @@
   <meta name="description" content="Nume Labs — Creative studio for beauty brands. Not just visuals. Narratives." />
   <title>Nume Labs</title>
 
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Belleza&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <a class="skip" href="#portfolio">Skip to portfolio</a>
 
-<header class="hero" id="top">
-  <div class="container">
+  <header class="hero" id="top">
+    <div class="container">
+      <div class="hero__inner">
 
-    <!-- Top brand bar -->
-    <div class="topbar">
-      <a class="topbar__brand" href="#top">
-        <img class="topbar__logo" src="assets/brand/logo.png" alt="Nume Labs mark">
-        <span class="topbar__name">NUME LABS</span>
-      </a>
+        <div class="hero__brand">
+          <div class="kicker">Creative studio</div>
 
-      <a class="topbar__cta" href="mailto:hello.numelabs@gmail.com?subject=Nume%20Labs%20Availability%20Request">
-        Request availability
-      </a>
-    </div>
+          <!-- Optional logo mark (uncomment once you have a file)
+          <img class="logoMark" src="assets/brand/logo-mark.png" alt="Nume Labs logo">
+          -->
 
-    <div class="hero__inner">
-      <div class="hero__brand">
-        <div class="kicker">Creative studio</div>
-        <h1 class="wordmark">NUME LABS</h1>
-      </div>
+          <h1 class="wordmark">NUME LABS</h1>
+        </div>
 
-      <div class="hero__copy">
-        <p class="tagline">
-          Creative studio for beauty brands<br>
-          <span class="tagline__sub">Not just visuals. Narratives.</span>
-        </p>
+        <div class="hero__copy">
+          <p class="tagline">
+            Creative studio for beauty brands.<br>
+            <span class="tagline__sub">Not just visuals. Narratives.</span>
+          </p>
 
-        <p class="heroLine">
-          We combine strategic + narrative thinking with AI-native production to deliver campaign-level visual systems with speed and control.
-        </p>
+          <p class="support">
+            We combine narrative direction with AI production to create cohesive brand visuals.
+          </p>
 
-        <a class="anchor" href="#work">View Work</a>
+          <p class="location">Based in London, working with brands globally.</p>
+
+          <a class="anchor" href="#portfolio">View Work</a>
+        </div>
+
       </div>
     </div>
+  </header>
 
-  </div>
-</header>
+  <main class="main">
+    <div class="container">
 
-<main class="main">
-  <div class="container">
+      <section class="accordion" aria-label="Site sections">
 
-    <section class="accordion">
+        <!-- Portfolio (open by default) -->
+        <section class="acc" id="portfolio">
+          <h2 class="acc__title">
+            <button class="acc__trigger" type="button" aria-expanded="true" aria-controls="acc-portfolio">
+              Portfolio
+              <span class="acc__meta">3 campaigns</span>
+              <span class="acc__icon" aria-hidden="true"></span>
+            </button>
+          </h2>
 
-      <!-- Selected Work (OPEN by default) -->
-      <section class="acc" id="work">
-        <h2 class="acc__title">
-          <button class="acc__trigger" type="button" aria-expanded="true" aria-controls="acc-work">
-            Selected Work
-            <span class="acc__meta">3 campaigns</span>
-            <span class="acc__icon"></span>
-          </button>
-        </h2>
+          <div class="acc__panel" id="acc-portfolio" role="region" aria-label="Portfolio">
+            <div class="acc__content">
 
-        <div class="acc__panel" id="acc-work">
-          <div class="acc__content">
+              <div class="workGrid">
 
-            <div class="workGrid">
+                <article class="campaign">
+                  <header class="campaign__header">
+                    <h3 class="campaign__name">Lumia Serum</h3>
+                    <p class="campaign__tag">Spec campaign</p>
+                  </header>
 
-              <!-- Lumia -->
-              <article class="campaign">
-                <header class="campaign__header">
-                  <h3 class="campaign__name">Lumia Serum</h3>
-                  <p class="campaign__desc">
-                    Premium product + macro detail studies.
-                  </p>
-                </header>
+                  <div class="thumbGrid" aria-label="Lumia Serum images">
+                    <img src="assets/work/campaign-01/01.jpg" alt="Lumia Serum — image 1" loading="lazy">
+                    <img src="assets/work/campaign-01/02.jpg" alt="Lumia Serum — image 2" loading="lazy">
+                    <img src="assets/work/campaign-01/03.jpg" alt="Lumia Serum — image 3" loading="lazy">
+                    <img src="assets/work/campaign-01/04.jpg" alt="Lumia Serum — image 4" loading="lazy">
+                    <img src="assets/work/campaign-01/05.jpg" alt="Lumia Serum — image 5" loading="lazy">
+                    <img src="assets/work/campaign-01/06.jpg" alt="Lumia Serum — image 6" loading="lazy">
+                  </div>
+                </article>
 
-                <div class="thumbGrid">
-                  <img src="assets/work/campaign-01/01.jpg" alt="">
-                  <img src="assets/work/campaign-01/02.jpg" alt="">
-                  <img src="assets/work/campaign-01/03.jpg" alt="">
-                </div>
-              </article>
+                <article class="campaign">
+                  <header class="campaign__header">
+                    <h3 class="campaign__name">Nectar</h3>
+                    <p class="campaign__tag">Spec campaign</p>
+                  </header>
 
-              <!-- Nectar -->
-              <article class="campaign">
-                <header class="campaign__header">
-                  <h3 class="campaign__name">Nectar</h3>
-                  <p class="campaign__desc">
-                    Sensory storytelling. Viscous pours. Texture focus.
-                  </p>
-                </header>
+                  <div class="thumbGrid" aria-label="Nectar images">
+                    <img src="assets/work/campaign-02/01.jpg" alt="Nectar — image 1" loading="lazy">
+                    <img src="assets/work/campaign-02/02.jpg" alt="Nectar — image 2" loading="lazy">
+                    <img src="assets/work/campaign-02/03.jpg" alt="Nectar — image 3" loading="lazy">
+                    <img src="assets/work/campaign-02/04.jpg" alt="Nectar — image 4" loading="lazy">
+                    <img src="assets/work/campaign-02/05.jpg" alt="Nectar — image 5" loading="lazy">
+                    <img src="assets/work/campaign-02/06.jpg" alt="Nectar — image 6" loading="lazy">
+                  </div>
+                </article>
 
-                <div class="thumbGrid">
-                  <img src="assets/work/campaign-02/01.jpg" alt="">
-                  <img src="assets/work/campaign-02/02.jpg" alt="">
-                  <img src="assets/work/campaign-02/03.jpg" alt="">
-                </div>
+                <article class="campaign">
+                  <header class="campaign__header">
+                    <h3 class="campaign__name">Night Shift</h3>
+                    <p class="campaign__tag">Narrative study</p>
+                  </header>
 
-                <video class="workVideo" src="assets/work/campaign-02/loop.mp4" autoplay muted loop playsinline></video>
-              </article>
+                  <div class="thumbGrid" aria-label="Night Shift images">
+                    <img src="assets/work/campaign-03/01.jpg" alt="Night Shift — image 1" loading="lazy">
+                    <img src="assets/work/campaign-03/02.jpg" alt="Night Shift — image 2" loading="lazy">
+                    <img src="assets/work/campaign-03/03.jpg" alt="Night Shift — image 3" loading="lazy">
+                    <img src="assets/work/campaign-03/04.jpg" alt="Night Shift — image 4" loading="lazy">
+                    <img src="assets/work/campaign-03/05.jpg" alt="Night Shift — image 5" loading="lazy">
+                    <img src="assets/work/campaign-03/06.jpg" alt="Night Shift — image 6" loading="lazy">
+                  </div>
+                </article>
 
-              <!-- Night Shift -->
-              <article class="campaign">
-                <header class="campaign__header">
-                  <h3 class="campaign__name">Night Shift</h3>
-                  <p class="campaign__desc">
-                    Model-forward editorial scenes built as cohesive narrative sets.
-                  </p>
-                </header>
-
-                <div class="thumbGrid">
-                  <img src="assets/work/campaign-03/01.jpg" alt="">
-                  <img src="assets/work/campaign-03/02.jpg" alt="">
-                  <img src="assets/work/campaign-03/03.jpg" alt="">
-                </div>
-              </article>
+              </div>
 
             </div>
-
           </div>
-        </div>
+        </section>
+
+        <!-- How it works -->
+        <section class="acc" id="how">
+          <h2 class="acc__title">
+            <button class="acc__trigger" type="button" aria-expanded="false" aria-controls="acc-how">
+              How it works
+              <span class="acc__meta">Process</span>
+              <span class="acc__icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+
+          <div class="acc__panel" id="acc-how" role="region" aria-label="How it works" hidden>
+            <div class="acc__content">
+
+              <div class="steps">
+                <div class="step">
+                  <div class="step__kicker">Brief</div>
+                  <p class="body">
+                    We start by understanding what you’re launching and where the work will live. Together, we define the visual direction: tone, context, references, and the details that make the campaign feel like your brand.
+                  </p>
+                </div>
+
+                <div class="step">
+                  <div class="step__kicker">Develop</div>
+                  <p class="body">
+                    We build a small set of creative directions and refine through feedback. You’ll see options for composition, styling, and scene choices, so we can lock a single cohesive approach before expanding the set.
+                  </p>
+                </div>
+
+                <div class="step">
+                  <div class="step__kicker">Deliver</div>
+                  <p class="body">
+                    Once the direction is decided, we produce the full set with consistency and detail. Deliverables are provided in the formats you need for launch.
+                  </p>
+                  <p class="body">
+                    Production moves quickly, typically within 1–2 weeks depending on scope and feedback.
+                  </p>
+                  <p class="body">
+                    Production is executed using AI tools under direct creative direction.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- Services -->
+        <section class="acc" id="services">
+          <h2 class="acc__title">
+            <button class="acc__trigger" type="button" aria-expanded="false" aria-controls="acc-services">
+              Services
+              <span class="acc__meta">2 offerings</span>
+              <span class="acc__icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+
+          <div class="acc__panel" id="acc-services" role="region" aria-label="Services" hidden>
+            <div class="acc__content">
+
+              <div class="service">
+                <h3 class="service__name">Campaigns</h3>
+                <p class="body">
+                  Narrative-driven visual sets built around a defined direction. Each campaign begins with concept development and expands into a cohesive set of images and video. Everything is developed as one system, not separate assets, and refined through a single revision round.
+                </p>
+              </div>
+
+              <div class="service">
+                <h3 class="service__name">Product Studio</h3>
+                <p class="body">
+                  Product visuals developed with the same level of creative direction. From packshots to detailed studies and optional product loops, each set is designed to be consistent and ready for use across your brand ecosystem.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- Terms -->
+        <section class="acc" id="terms">
+          <h2 class="acc__title">
+            <button class="acc__trigger" type="button" aria-expanded="false" aria-controls="acc-terms">
+              Terms
+              <span class="acc__meta">Summary</span>
+              <span class="acc__icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+
+          <div class="acc__panel" id="acc-terms" role="region" aria-label="Terms" hidden>
+            <div class="acc__content">
+
+              <div class="termsBlock">
+                <h3 class="h3">Booking & Payment</h3>
+                <p class="body">Projects are confirmed with a 50% deposit. The remaining balance is due prior to final file delivery. Work begins once the deposit is received.</p>
+
+                <h3 class="h3">Timeline</h3>
+                <p class="body">Most projects are completed within 1–2 weeks, depending on scope and feedback timing.</p>
+
+                <h3 class="h3">Creative Process & Revisions</h3>
+                <p class="body">Each project includes two feedback passes to refine and lock creative direction, and one round of revisions on final deliverables. Revisions apply to refinements within the agreed direction. New concepts or major structural changes may require additional scope.</p>
+
+                <h3 class="h3">Usage</h3>
+                <p class="body">Unless otherwise agreed, projects include a 12-month worldwide license for digital use (organic and paid). Print, broadcast, packaging, or extended usage can be arranged separately. Copyright remains with Nume Labs.</p>
+
+                <h3 class="h3">Cancellation</h3>
+                <p class="body">Deposits are non-refundable once work has begun. If a project is cancelled mid-way, payment is required for work completed up to the cancellation date.</p>
+
+                <h3 class="h3">Credit</h3>
+                <p class="body">Credit is appreciated where appropriate but not required for paid usage.</p>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact (open by default) -->
+        <section class="acc" id="contact">
+          <h2 class="acc__title">
+            <button class="acc__trigger" type="button" aria-expanded="true" aria-controls="acc-contact">
+              Contact
+              <span class="acc__meta">Email</span>
+              <span class="acc__icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+
+          <div class="acc__panel" id="acc-contact" role="region" aria-label="Contact">
+            <div class="acc__content">
+              <p class="body"><strong>Start a project</strong></p>
+              <p class="body">
+                <a class="email" href="mailto:hello.numelabs@gmail.com">hello.numelabs@gmail.com</a>
+              </p>
+
+              <!-- Replace this with your U-form embed when ready -->
+              <div class="uformPlaceholder">
+                <p class="small subtle">U-form embed goes here.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
       </section>
 
-      <!-- What We Do -->
-      <section class="acc">
-        <h2 class="acc__title">
-          <button class="acc__trigger" type="button" aria-expanded="false" aria-controls="acc-do">
-            What We Do
-            <span class="acc__meta">Capabilities</span>
-            <span class="acc__icon"></span>
-          </button>
-        </h2>
-
-        <div class="acc__panel" id="acc-do" hidden>
-          <div class="acc__content">
-            <ul class="list">
-              <li>Campaign concepts + narrative direction</li>
-              <li>Product & lifestyle visuals</li>
-              <li>AI-native production workflows</li>
-            </ul>
-          </div>
+      <footer class="footer">
+        <div class="footer__inner">
+          <span class="small subtle">© <span id="year"></span> Nume Labs</span>
+          <a class="small subtle" href="#top">Back to top</a>
         </div>
-      </section>
+      </footer>
 
-      <!-- About -->
-      <section class="acc">
-        <h2 class="acc__title">
-          <button class="acc__trigger" type="button" aria-expanded="false" aria-controls="acc-about">
-            About
-            <span class="acc__meta">Studio</span>
-            <span class="acc__icon"></span>
-          </button>
-        </h2>
+    </div>
+  </main>
 
-        <div class="acc__panel" id="acc-about" hidden>
-          <div class="acc__content">
-            <p>
-              Nume Labs is a creative studio built for beauty brands that want campaign-level output with disciplined execution.
-              We build cohesive visual systems, not disconnected assets.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact (OPEN by default) -->
-      <section class="acc">
-        <h2 class="acc__title">
-          <button class="acc__trigger" type="button" aria-expanded="true" aria-controls="acc-contact">
-            Contact
-            <span class="acc__meta">Email</span>
-            <span class="acc__icon"></span>
-          </button>
-        </h2>
-
-        <div class="acc__panel" id="acc-contact">
-          <div class="acc__content">
-            <p>
-              <a class="email" href="mailto:hello.numelabs@gmail.com">
-                hello.numelabs@gmail.com
-              </a>
-            </p>
-            <p class="small subtle">
-              Briefly describe the brand, timeline, and what you need.
-            </p>
-          </div>
-        </div>
-      </section>
-
-    </section>
-
-    <footer class="footer">
-      <div class="footer__inner">
-        <span>© <span id="year"></span> Nume Labs</span>
-        <a href="#top">Back to top</a>
-      </div>
-    </footer>
-
-  </div>
-</main>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

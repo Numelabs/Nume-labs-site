@@ -326,11 +326,14 @@ a:hover{ opacity: 0.92; }
 }
 .email:hover{ border-bottom-color: var(--line); }
 
-.uformPlaceholder{
-  margin-top: 16px;
-  border: 1px dashed var(--line2);
-  border-radius: 14px;
-  padding: 16px;
+.uformLink{
+  display: inline-block;
+  border-bottom: 1px solid var(--line2);
+  padding-bottom: 3px;
+}
+.uformLink:hover{
+  border-bottom-color: var(--line);
+  color: var(--fg);
 }
 
 /* Footer */

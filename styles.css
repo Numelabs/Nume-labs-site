@@ -78,7 +78,29 @@ a:hover{ opacity: 0.92; }
   gap: clamp(18px, 3vw, 36px);
   align-items: end;
 }
+.topbar__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.sociallink{
+  width: 22px;
+  height: 22px;
+  color: var(--muted);
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.sociallink:hover{
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.socialicon{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 .kicker{
   font-size: 12px;
   text-transform: uppercase;

@@ -370,3 +370,87 @@ a:hover{ opacity: 0.92; }
   align-items: center;
   gap: 18px;
 }
+/* Hero CTAs */
+.ctaRow{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: var(--track2);
+  border: 1px solid var(--line2);
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.btn:hover{ opacity: 0.92; transform: translateY(-1px); }
+
+.btn--primary{
+  background: var(--fg);
+  color: var(--bg);
+  border-color: rgba(239,230,214,0.65);
+}
+
+.btn--secondary{
+  background: transparent;
+  color: var(--fg);
+}
+
+/* Trust line */
+.trustline{
+  margin: 10px 0 0;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--muted);
+  max-width: 52ch;
+}
+
+/* How it works bullets */
+.bullets{
+  margin: 10px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.65;
+}
+.bullets li{ margin: 4px 0; }
+
+/* Starter example line */
+.starterLine{
+  margin: 12px 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--fg);
+  max-width: 70ch;
+}
+.topbar__inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sociallink{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line2);
+  border-radius: 999px;
+}
+
+.socialicon{
+  width: 18px;
+  height: 18px;
+  color: var(--fg);
+  opacity: 0.9;
+}
+.sociallink:hover .socialicon{ opacity: 1; }
